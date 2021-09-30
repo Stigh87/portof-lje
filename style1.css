@@ -1,0 +1,63 @@
+/* Styles  */
+body {
+    background: rgb(212,173,116);
+    background: linear-gradient(120deg, rgba(212,173,116,1) 4%, rgba(157,105,65,0.9837837837837837) 32%, rgba(157,105,65,0.9486486486486486) 59%, rgba(212,173,116,1) 86%);
+}
+
+#app {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 150px; /*fr=deler av skjerm, eller fast px */
+    grid-template-rows: 10fr 10fr 100fr; 
+    grid-template-areas: 
+    'header'
+    'nav'
+    'content';
+}
+
+.header {
+    grid-area: header;
+    width: 100vw;
+}
+
+.nav {
+    grid-area: nav;
+    width: 100vw;
+    border-bottom: 3px solid black;
+    margin: 10%;
+}
+
+    .btn {
+        color: whitesmoke;
+        font-size: 90%;
+        font-weight: bold;
+        font-family: cursive;
+        background: tomato;
+        box-shadow: 2px 2px 2px green;
+        border: 4px rgba(0, 128, 0, 0.575);
+        border-radius: 7%;
+        width: 110px;
+        height: 22px;
+    }
+    .btn:hover {
+        background: greenyellow;
+        box-shadow: 2px 2px 2px rgb(255, 255, 193);
+    }
+    /* Glow effekt ved trykk */
+    .btn:active {
+        box-shadow: 7px 7px 7px rgb(255, 255, 193);
+    }
+
+.content {
+    grid-area: content;
+    width: 100vw;
+}
+
+iframe {
+    border: 6px rgba(0, 0, 0, 0.671) solid;
+    border-radius: 1%;
+    height: 80vh;
+    width: 100vw;
+}

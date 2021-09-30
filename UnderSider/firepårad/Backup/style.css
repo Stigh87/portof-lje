@@ -1,0 +1,129 @@
+/* Styles  */
+body {
+    background-image: url("background.jpg") ;
+}
+
+#app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vh;
+}
+
+#winner {
+    color: green;
+    text-shadow: 1px 1px 2px tomato;
+    font-size: 40px;
+    font-family: cursive;
+    text-align: center;
+    height: 90px;
+    width: 317px;
+}
+
+
+#btn {
+    background: tomato;
+    height: 40px;
+    width: 120px;
+    color: whitesmoke;
+    font-size: large;
+    border-radius: 10%;
+    position: relative;
+    left: 15%;
+    font-family: cursive;
+    box-shadow: 1px 1px 1px 1px black;
+}
+    #btn:hover {
+        box-shadow: 0px 0px 0px 1px whitesmoke;
+    }
+    #btn:disabled{
+    color: rgb(168, 168, 168);
+    box-shadow: 1px 1px 1px 1px black;
+    }
+
+#nav {
+    background: rgba(0, 87, 0, 0.877);
+    border: rgb(0, 75, 0) solid 5px;
+    height: 50px;
+    width: 317px;
+    color: whitesmoke;
+    font-size: large;
+    font-family: cursive;
+    
+    left: 0%;
+}
+.yellow {
+    height: 39px;
+    width: 39px;
+    margin: 2px;
+    background: rgb(255,242,0);
+    background: radial-gradient(circle, rgba(255,242,0,1) 35%, rgba(0,0,0,1) 45%, rgba(255,254,36,1) 36%, rgba(255,242,0,1) 36%);
+    box-shadow: inset 0px 0px 0px 1px black;    
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    /* pointer-events: none;
+    cursor: default; */
+}
+
+.red {
+    height: 39px;
+    width: 39px;
+    margin: 2px;
+    background: rgb(255,0,0);
+    background: radial-gradient(circle, rgba(255,0,0,1) 35%, rgba(0,0,0,1) 45%, rgba(255,36,36,1) 36%, rgba(255,0,0,1) 36%);
+    box-shadow: inset 0px 0px 0px 1px black;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    /* pointer-events: none;
+    cursor: default; */
+}
+
+.mainBoard {
+    position: relative;
+    width: 317px;
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px black solid;
+    background-color: rgba(0, 0, 255, 0.856);
+    border-radius: 2%;
+    box-shadow: 5px 8px 15px 10px black;
+}
+
+.mainBoard:empty {
+    position: relative;
+    top: 0vh;
+    left: 0vh;
+    width: 550px;
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    border: none;
+}
+
+.empty {
+    height: 39px;
+    width: 39px;
+    margin: 2px;
+    /* background-color: rgb(226, 226, 226); */
+    background-image: url("background.jpg");
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: inset -1px -2px 1px 2px black; 
+}
+.empty:hover {
+    background: greenyellow;
+    
+}
+
+.stopp {
+    pointer-events: none;
+    cursor: default;
+}
+
